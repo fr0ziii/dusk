@@ -1,0 +1,16 @@
+# Dependencies and generated compiler output
+node_modules/
+.scriptc/
+dusk
+dusk.exe
+dusk.ll
+*.dSYM/
+
+# Local environment and editor state
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/
+*.swp

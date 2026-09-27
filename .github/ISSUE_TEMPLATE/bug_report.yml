@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible problem with dusk.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please remove private paths and filenames before sharing output.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened? Include the exact command and relevant output.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: dusk version or commit
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS, terminal, and Node.js version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest steps or temporary directory layout that reproduces this issue.
+    validations:
+      required: true

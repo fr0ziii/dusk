@@ -1,0 +1,43 @@
+{
+  "name": "dusk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A minimal monochrome terminal disk-usage explorer",
+  "license": "MIT",
+  "author": "David Iglesias (fr0ziii)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fr0ziii/dusk.git"
+  },
+  "homepage": "https://github.com/fr0ziii/dusk#readme",
+  "bugs": {
+    "url": "https://github.com/fr0ziii/dusk/issues"
+  },
+  "keywords": [
+    "disk-usage",
+    "disk-space",
+    "terminal",
+    "tui",
+    "treemap",
+    "typescript",
+    "scriptc"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=24",
+    "npm": ">=10 <11"
+  },
+  "packageManager": "npm@10.9.4",
+  "scripts": {
+    "start": "node --experimental-strip-types src/dusk.ts",
+    "build": "scriptc build src/dusk.ts -o dusk --no-keep-c",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test src/disk-scan.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "scriptc": "^0.1.7",
+    "typescript": "^5.9.0"
+  }
+}

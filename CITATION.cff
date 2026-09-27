@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use dusk in your work, please cite it using this metadata."
+title: "dusk: a terminal disk-usage explorer"
+type: software
+abstract: "A monochrome terminal application for recursively scanning directories and exploring disk usage with a proportional treemap."
+url: "https://github.com/fr0ziii/dusk"
+authors:
+  - family-names: Iglesias
+    given-names: David
+    alias: fr0ziii
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/fr0ziii/dusk"
