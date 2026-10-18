@@ -35,7 +35,7 @@
     "check": "npm run typecheck && npm test"
   },
   "devDependencies": {
-    "@types/node": "^24.0.0",
+    "@types/node": "^26.6.5",
     "scriptc": "^0.1.7",
     "typescript": "^5.9.0"
   }
